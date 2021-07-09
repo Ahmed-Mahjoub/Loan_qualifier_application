@@ -35,7 +35,7 @@ def save_csv(output_path, qualifying_loans):
     header= ("bank_data", "credit_score", "debt", "income", "loan", "home_value")
     output_path =Path("data/qualifing_loan.csv")
     with open(output_path, "w") as csvfile:
-      csvwriter = csv.writer(csvfile, delimiter = ",")
+      csvwriter = csv.writer(csvfile, delimiter = "|")
       csvwriter.writerow(header)
       for item in qualifying_loans:
         csvwriter.writerow(item)
