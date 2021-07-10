@@ -1,2 +1,6 @@
 Lender|Max_Loan_Amount|Max_Loan_to_Value|Max_Debt_to_Income|Credit_Score|Interest_Rate
-1|2|3|4|5|6
+West Central Credit Union - Starter Plus|300000|0.8|0.44|650|3.9
+FHA Fredie Mac - Starter Plus|300000|0.85|0.45|550|4.35
+Bank of Fintech - Starter Plus|100000|0.85|0.47|610|4.5
+Goldman MBS - Starter Plus|100000|0.8|0.43|600|4.35
+Developers Credit Union - Starter Plus|200000|0.85|0.46|640|4.2
