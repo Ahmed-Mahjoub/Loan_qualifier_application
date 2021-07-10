@@ -29,16 +29,19 @@ def load_csv(csvpath):
             data.append(row)
     return data
 
+
 # function named save_csv() that uses the csv library to save the qualifying data as a file
 
 def save_csv(output_path, qualifying_loans):
-    header= ("bank_data", "credit_score", "debt", "income", "loan", "home_value")
-    output_path =Path("data/qualifing_loan.csv")
-    with open(output_path, "w", newline='') as csvfile:
+   header= ("Lender", "Max_Loan_Amount", "Max_Loan_to_Value", "Max_Debt_to_Income", "Credit_Score", "Interest_Rate")
+   output_path =Path("data/qualifing_loan.csv")
+   with open(output_path, "w", newline='') as csvfile:
       csvwriter = csv.writer(csvfile, delimiter = "|")
       csvwriter.writerow(header)
       for item in qualifying_loans:
         csvwriter.writerow(item)
+   return
 
-    return 
+
+
     

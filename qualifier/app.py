@@ -117,8 +117,6 @@ output_path = questionary.confirm("would you like to save your result of the qua
         
 
 
-
-
     
 
 
