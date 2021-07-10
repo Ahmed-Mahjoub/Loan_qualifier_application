@@ -42,5 +42,6 @@ def test_filters():
     # YOUR CODE HERE!
 def test_save_csv():
     csvpath = Path('./data/qualifying_loans.csv')
-    fileio.save_csv(csvpath, [[1,2,3,4,5,6]])
+    header = ["Lender","Max Loan Amount","Max LTV","Max DTI","Min Credit Score","Interest Rate"],
+    fileio.save_csv(csvpath, [[1,2,3,4,5,6]], header)
     assert csvpath.exists
