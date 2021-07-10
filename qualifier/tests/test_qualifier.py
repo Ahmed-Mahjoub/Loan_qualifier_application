@@ -14,6 +14,9 @@ from qualifier.filters import loan_to_value
 from qualifier.filters import max_loan_size
 
 def test_save_csv():
+    csvpath = Path('./data/qualifying_loans.csv')
+    fileio.save_csv(csvpath,[[1,2,3,4,5,6]])
+    assert csvpath.exists
     # @TODO: Your code here!
     # Use Path from pathlib to output the test csv to ./data/output/qualifying_loans.csv
 
@@ -37,3 +40,7 @@ def test_filters():
 
     # @TODO: Test the new save_csv code!
     # YOUR CODE HERE!
+def test_save_csv():
+    csvpath = Path('./data/qualifying_loans.csv')
+    fileio.save_csv(csvpath, [[1,2,3,4,5,6]])
+    assert csvpath.exists
